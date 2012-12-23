@@ -5,7 +5,15 @@ Ripped straight from an email I wrote to some friends, it's
 Showing crosshairs on the cursor when it's on top of parentheses (or othere
 elements of 'matchpairs'.
 
-To hell with code files, here's the code:
+## Install
+
+Use pathogen or vundle, or copy plugin/paren_crosshairs.vim to ~.vim/plugin.
+
+
+## What's it do
+
+Here's the original text of the email. The current plugin just has a few
+niceties added:
 
 ```vim
 func! TargetMatchpairs()
