@@ -2,7 +2,7 @@ Ripped straight from an email I wrote to some friends, it's
 
 # Parentheses Crosshairs
 
-Showing crosshairs on the cursor when it's on top of parentheses (or othere
+Showing crosshairs on the cursor when it's on top of parentheses (or other
 elements of 'matchpairs').
 
 ## Install
@@ -12,17 +12,27 @@ Use pathogen or vundle, or copy plugin/paren_crosshairs.vim to ~.vim/plugin.
 
 ## Why?
 
-The MatchParen highlight group tries to do a good thing; namely, highlight the
-paren that matches the one under the cursor. However, my friends and I found
-that having two parentheses highlighted continually confounded our intuition
-about where the *cursor actually is*.
+The matchparen plugin tries to do a good thing; namely, highlight the paren that
+matches the one under the cursor. However, my friends and I found that having
+two parentheses highlighted always confounds our intuition about *where the
+cursor actually is*.
 
 This plugin deals with this problem by setting cursorline and cursorcolumn when
 the cursor is on a paren.
 
 Screenshot time!
 
+### Before
+![](http://i.imgur.com/5iZPJ.png)
+
+Where's the cursor?
+
+### After
 ![](http://i.imgur.com/i8uld.png?1)
+
+There it is!
+
+## Historie
 
 Here's the original text of the email. The current plugin just has a few
 niceties added:
