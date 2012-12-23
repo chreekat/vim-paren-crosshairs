@@ -1,6 +1,6 @@
 Ripped straight from an email I wrote to some friends, it's
 
-# Target Parentheses
+# Parentheses Crosshairs
 
 Showing crosshairs on the cursor when it's on top of parentheses (or othere
 elements of 'matchpairs'.
