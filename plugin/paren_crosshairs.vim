@@ -1,3 +1,13 @@
+" Vim plugin for putting crosshairs on cursor when on a paren
+" Maintainer:   Bryan Richter <at the googles>
+" Last Change:  2012
+" License:      WTFPL
+
+if exists("g:loaded_paren_crosshairs")
+    finish
+endif
+let g:loaded_paren_crosshairs = 1
+
 func! s:targetMatchpairs()
     if !exists('b:targetAcquired')
         let b:targetAcquired = 0
