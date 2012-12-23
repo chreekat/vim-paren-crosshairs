@@ -10,7 +10,19 @@ elements of 'matchpairs'.
 Use pathogen or vundle, or copy plugin/paren_crosshairs.vim to ~.vim/plugin.
 
 
-## What's it do
+## Why?
+
+The MatchParen highlight group tries to do a good thing; namely, highlight the
+paren that matches the one under the cursor. However, my friends and I found
+that having two parentheses highlighted continually confounded our intuition
+about where the *cursor actually is*.
+
+This plugin deals with this problem by setting cursorline and cursorcolumn when
+the cursor is on a paren.
+
+Screenshot time!
+
+![](http://i.imgur.com/i8uld.png?1)
 
 Here's the original text of the email. The current plugin just has a few
 niceties added:
