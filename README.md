@@ -23,12 +23,12 @@ the cursor is on a paren.
 Screenshot time!
 
 ### Before
-![](http://i.imgur.com/5iZPJ.png)
+![Demo of two highlighted parens](http://i.imgur.com/5iZPJ.png "Before")
 
 Where's the cursor?
 
 ### After
-![](http://i.imgur.com/i8uld.png?1)
+![Demo of paren crosshairs](http://i.imgur.com/i8uld.png?1 "After")
 
 There it is!
 
