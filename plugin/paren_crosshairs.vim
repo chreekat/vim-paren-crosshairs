@@ -3,7 +3,7 @@
 " Last Change:  2012
 " License:      WTFPL
 
-if exists("g:loaded_paren_crosshairs")
+if exists("g:loaded_paren_crosshairs") || &cp || !exists("##CursorMoved")
     finish
 endif
 let g:loaded_paren_crosshairs = 1
