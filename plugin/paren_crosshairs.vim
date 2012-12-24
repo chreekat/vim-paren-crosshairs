@@ -8,6 +8,12 @@ if exists("g:loaded_paren_crosshairs") || &cp || !exists("##CursorMoved")
 endif
 let g:loaded_paren_crosshairs = 1
 
+augroup TargetMatchpairs
+    au!
+    au WinEnter,CmdwinEnter,CursorMoved,CursorMovedI * call s:targetMatchpairs()
+    au WinLeave * call s:suspendTargeting()
+augroup END
+
 func! s:targetMatchpairs()
     if !exists('w:targetAcquired')
         let w:targetAcquired = 0
@@ -19,7 +25,8 @@ func! s:targetMatchpairs()
     endif
 
     let curChar = getline('.')[col('.') - 1]
-    let targetInReticule = len(curChar) > 0 && stridx(b:matchPairs, curChar) >= 0
+    let targetInReticule =
+                \len(curChar) > 0 && stridx(b:matchPairs, curChar) >= 0
 
     if targetInReticule && !w:targetAcquired
         let w:disengage = "set " . (&cuc ? "cuc" : "nocuc")
@@ -38,9 +45,3 @@ func! s:suspendTargeting()
         let w:targetAcquired = 0
     endif
 endfu
-
-augroup TargetMatchpairs
-    au!
-    au WinEnter,CursorMoved,CursorMovedI * call s:targetMatchpairs()
-    au WinLeave * call s:suspendTargeting()
-augroup END
