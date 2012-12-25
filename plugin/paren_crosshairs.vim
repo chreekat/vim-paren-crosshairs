@@ -11,7 +11,7 @@ let g:loaded_paren_crosshairs = 1
 augroup TargetMatchpairs
     au!
     au WinEnter,CmdwinEnter,CursorMoved,CursorMovedI * call s:targetMatchpairs()
-    au WinLeave * call s:suspendTargeting()
+    au BufLeave,WinLeave * call s:suspendTargeting()
 augroup END
 
 func! s:targetMatchpairs()
