@@ -40,7 +40,7 @@ func! s:targetMatchpairs()
 endfu
 
 func! s:suspendTargeting()
-    if w:targetAcquired
+    if exists('w:targetAcquired') && w:targetAcquired
         exec w:disengage
         let w:targetAcquired = 0
     endif
