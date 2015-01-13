@@ -1,4 +1,16 @@
-Ripped straight from an email I wrote to some friends, it's
+***Heads up!*** I don't use this anymore. It ended up being too distracting and occasionally counterproductive. Here's what I use now: 
+
+    " Matchparen is confusing in normal mode
+    augroup insertMatch
+        au!
+        au BufReadPost * NoMatchParen
+        au InsertEnter * DoMatchParen
+        au InsertLeave * NoMatchParen
+    augroup END
+
+We now take you to your regularly scheduled program.
+
+*Ripped straight from an email I wrote to some friends, it's*
 
 # Parentheses Crosshairs
 
