@@ -1,12 +1,14 @@
 ***Heads up!*** I don't use this anymore. It ended up being too distracting and occasionally counterproductive. Here's what I use now: 
 
+***Edit again:  I don't even use this anymore. &lt;cue deal-with-it gif>***
+
     " Matchparen is confusing in normal mode
-    augroup insertMatch
-        au!
-        au BufReadPost * NoMatchParen
-        au InsertEnter * DoMatchParen
-        au InsertLeave * NoMatchParen
-    augroup END
+    "augroup insertMatch
+    "    au!
+    "    au BufReadPost * NoMatchParen
+    "    au InsertEnter * DoMatchParen
+    "    au InsertLeave * NoMatchParen
+    "augroup END</strike>
 
 We now take you to your regularly scheduled program.
 
